@@ -1,0 +1,1078 @@
+/* ============================================
+   EIPONI LANGUAGE SCHOOL - KOMPLETNY STYLESHEET
+   Kolory dopasowane do loga EIPONI
+============================================ */
+
+/* IMPORTY CZCIONEK */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap');
+
+/* ZMIENNE KOLORÓW - PALETA LOGA EIPONI */
+:root {
+  /* Kolory główne z loga */
+  --eiponi-red: #DC143C;           /* Czerwony z flag Polski i Japonii */
+  --eiponi-red-light: #FF6B6B;     /* Jasny czerwony */
+  --eiponi-red-pale: #FFE5E5;      /* Bardzo jasny czerwony */
+  --eiponi-red-dark: #B01030;      /* Ciemny czerwony */
+  --eiponi-red-dark-logo: #c30f1b;       /* czerwony z loga */
+  --eiponi-red-light-logo: #e91120;       /* jasny czerwony z loga */
+
+  
+  --eiponi-navy: #00247D;          /* Granatowy z flagi brytyjskiej */
+  --eiponi-navy-light: #1E3A8A;    /* Jasny granatowy */
+  --eiponi-navy-pale: #E0E7FF;     /* Bardzo jasny granatowy */
+   --eiponi-navy-logo: #434b92;          /* Granatowy z flagi brytyjskiej z loga */
+   --eiponi-navy-light-logo: #545eb8;    /* Jasny granatowy z loga */
+
+  
+  --white: #FFFFFF;
+  --cream: #FFF9F5;
+  --paper: #F8F6F4;
+  --gray-light: #F5F5F5;
+  --gray-medium: #E0E0E0;
+  --gray-dark: #6C757D;
+  --gray-logo: #dedede; /* szary z loga */  
+  
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-muted: #6C757D;
+  
+  --accent-gold: #D4AF37;
+  --accent-green: #198754;
+  --accent-blue: #0D6EFD;
+  
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.12);
+  --shadow-eiponi: 0 0 15px rgba(220, 20, 60, 0.25);
+
+  --color-bg:#FFF6F0;          /* Warm cream background */
+  --color-bg-alt:#FFF9F6;      /* Subtle warm tint */
+}
+
+/* RESET I PODSTAWY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Noto Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-secondary);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 3rem; font-weight: 800; }
+h2 { font-size: 2.25rem; font-weight: 700; }
+h3 { font-size: 1.75rem; font-weight: 600; }
+h4 { font-size: 1.375rem; font-weight: 600; }
+h5 { font-size: 1.125rem; font-weight: 600; }
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================
+   NAVBAR
+============================================ */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-soft);
+  border-bottom: 1px solid var(--gray-medium);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--eiponi-red-dark-logo);
+  transform: translateY(-2px);
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Wyróżniony link w navbarze */
+.nav-rekrutacja {
+  background-color: var(--eiponi-red);
+  color: white !important;
+  font-weight: 700 !important;
+  border-radius: 6px;
+  margin-left: 10px;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Hover */
+.nav-rekrutacja:hover {
+  background-color: var(--eiponi-red-dark);
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+/* W wersji mobilnej – większa widoczność */
+.navbar .nav-rekrutacja {
+  margin-top: 6px;
+}
+
+
+/* ============================================
+   SEKCJA: LANDING PAGE / HERO (#landing)
+============================================ */
+#landing.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.03)), 
+              url("img/sakura_sekcja1.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+  min-height: 100vh;
+}
+
+#landing h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.text-shadow {
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* ============================================
+   SEKCJA: O NAS (#o-nas)
+============================================ */
+#o-nas {
+  background-color: var(--white);
+  padding: 5rem 0;
+}
+
+#o-nas h2 {
+  color: var(--eiponi-red);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+#o-nas .lead {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#o-nas img {
+  border-radius: 15px;
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.3s ease;
+}
+
+#o-nas img:hover {
+  transform: scale(1.02);
+}
+
+/* ============================================
+   SEKCJA: DLA KOGO (#dla_kogo)
+============================================ */
+#dla_kogo {
+  padding: 5rem 0;
+}
+
+#dla_kogo h2 {
+  color: var(--text-secondary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+#dla_kogo .card {   
+  overflow: hidden;
+}
+
+
+#dla_kogo .card-title { 
+  
+  margin-top: 1rem;
+}
+
+
+#dla_kogo .ratio img {
+  transition: transform 0.3s ease;
+}
+
+#dla_kogo .card:hover .ratio img {
+  transform: scale(1.05);
+}
+
+/* ============================================
+   SEKCJA: ZESPÓŁ (#zespol)
+============================================ */
+#zespol {
+  background-color: var(--white);
+  padding: 5rem 0;
+}
+
+#zespol h2 {
+  color: var(--eiponi-red);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+#zespol .card {  
+  padding: 1rem 0;
+}
+
+
+#zespol .card-title {
+  margin-bottom: 0.5rem;
+}
+
+#zespol .text-muted {
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  font-style: italic;
+}
+
+
+
+/* Zdjęcia zespołu */
+.team-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--eiponi-red);
+  padding: 3px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-photo:hover {
+  transform: scale(1.08);
+  box-shadow: var(--shadow-eiponi);
+}
+
+/* ============================================
+   SEKCJA: OPINIE (#opinie)
+============================================ */
+#opinie {
+  padding: 5rem 0;
+}
+
+#opinie .bg-light {
+  background-color: transparent !important;
+}
+
+#opinie h2 {
+  color: var(--text-secondary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+
+.opinieSwiper {
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+}
+
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 350px;
+  border: 1px solid var(--gray-light);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-5px);
+  border-color: var(--eiponi-red-light);
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  border: 2px solid var(--eiponi-red);
+  padding: 3px;
+}
+
+.testimonial-quote {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  text-align: center;
+  flex-grow: 1;
+  font-style: italic;
+}
+
+.testimonial-rating {
+  color: var(--accent-gold);
+  font-size: 20px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+  letter-spacing: 2px;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: var(--gray-medium);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--eiponi-red);
+  opacity: 1;
+  width: 30px;
+  border-radius: 6px;
+}
+
+/* ============================================
+   SEKCJA: CENNIK (#cennik)
+============================================ */
+#cennik {
+  background-color: var(--white);
+  padding: 5rem 0;
+}
+
+#cennik h2 {
+  color: var(--eiponi-red);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.plan-card {
+  border: 2px solid var(--gray-medium);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--eiponi-red);
+}
+
+.plan-card h3 {
+  color: var(--eiponi-red);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.plan-card .price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 1.5rem 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.plan-card .price span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  flex-grow: 1;
+}
+
+.plan-card ul li {
+  padding: 0.75rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.plan-card ul li:last-child {
+  border-bottom: none;
+}
+
+.plan-card .btn {
+  margin-top: auto;
+}
+
+.plan-featured {
+  border-color: var(--eiponi-red);
+  position: relative;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.plan-featured::before {
+  content: "NAJPOPULARNIEJSZY";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--eiponi-red);
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Badge z ceną na kartach */
+.badge-cena {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--eiponi-red) !important;
+  color: var(--white) !important;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Przycisk "Zamów" na kartach */
+.btn-zamow {
+  background-color: transparent;
+  border: 2px solid var(--eiponi-red);
+  color: var(--eiponi-red);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-zamow:hover {
+  background-color: var(--eiponi-red);
+  border-color: var(--eiponi-red);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+
+/* Stylizacja przycisku outline-primary */
+
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,
+.btn-outline-primary.show {
+    background-color: transparent !important;
+    border-color: var(--eiponi-red) !important;
+    color: var(--eiponi-red) !important;
+    box-shadow: none !important;
+}
+
+/* Hover */
+.btn-outline-primary:hover {
+    background-color: var(--eiponi-red) !important;
+    border-color: var(--eiponi-red) !important;
+    color: var(--white) !important;
+}
+
+/* Active (kliknięcie) – zachowaj czerwony */
+.btn-outline-primary:active {
+    background-color: var(--eiponi-red-dark) !important;
+    border-color: var(--eiponi-red-dark) !important;
+    color: var(--white) !important;
+}
+
+
+/* Badge w lewym górnym rogu grupa Nagoya*/
+
+.badge-top {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--eiponi-red);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    box-shadow: var(--shadow-soft);
+    z-index: 10;
+}
+
+
+
+/* Trójkąt w lewym górnym rogu  grupa Yokohama*/
+.badge-trojkat {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* wielkość trójkąta */
+    width: 0;
+    height: 0;
+    border-top: 90px solid var(--eiponi-red);
+    border-right: 90px solid transparent;
+
+    z-index: 20;
+}
+
+/* Tekst na trójkącie */
+.badge-trojkat-tekst {
+    position: absolute;
+    top: 15px;        
+    left: -23px;      
+    width: 110px;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    transform: rotate(-45deg);
+    z-index: 21;
+    pointer-events: none;
+}
+
+/* ============================================
+   SEKCJA: FAQ
+============================================ */
+
+/* Zmiana koloru nagłówka po otwarciu */
+.accordion-button:not(.collapsed) {
+    background-color: var(--gray-light) !important;
+    color: var(--text-secondary) !important;    
+    box-shadow: none !important;
+}
+
+.accordion-button.collapsed {
+    background-color: var(--white);
+    color: var(--text-secondary);
+}
+.accordion-collapse.show .accordion-body {
+    background-color: var(--white);
+    color: var(--text-primary);   
+}
+
+.accordion-button:focus {
+    border-color: var(--text-secondary) !important;
+    box-shadow: 0 0 0 0.15rem rgba(72, 74, 72, 0.25) !important;
+    box-shadow: 0 0 0 0.15rem rgba(220, 20, 60, 0.25) !important;
+    box-shadow: none !important;
+    border-left: solid 3px var(--eiponi-red) !important;
+}
+
+
+/* ============================================
+   SEKCJA: NEWSLETTER/KONTAKT
+============================================ */
+.newsletter-signup {
+  padding: 5rem 0;
+}
+
+.newsletter-signup h2 {
+  color: var(--text-secondary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.newsletter-signup .card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: var(--shadow-medium);
+  background-color: var(--white);
+}
+
+.newsletter-signup .form-control {
+  border: 2px solid var(--gray-medium);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.newsletter-signup .form-control:focus {
+  border-color: var(--eiponi-red);
+  box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.15);
+}
+
+.newsletter-signup .form-check-input {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
+  opacity: 1 !important;
+  position: static !important;
+  pointer-events: auto !important;
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--eiponi-red);
+  cursor: pointer;
+}
+
+.newsletter-signup .form-check-label {
+  pointer-events: auto !important;
+  cursor: pointer;
+  user-select: none;
+  color: var(--text-secondary);
+}
+
+.newsletter-signup .btn-success {
+  background-color: var(--eiponi-red);
+  border-color: var(--eiponi-red);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.newsletter-signup .btn-success:hover {
+  background-color: var(--eiponi-red-dark);
+  border-color: var(--eiponi-red-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.newsletter-signup .text-danger {
+  color: var(--eiponi-red) !important;
+}
+
+.newsletter-signup .text-success {
+  color: var(--eiponi-red) !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ============================================
+   FOOTER (#footer)
+============================================ */
+#footer footer,
+footer {
+  background-color: var(--text-primary);
+  color: var(--white);
+  border-top: 3px solid var(--eiponi-red);
+  padding: 3rem 0 1.5rem;
+}
+
+footer h5 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--eiponi-red);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: var(--gray-light);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: var(--eiponi-red-light);
+  transform: translateX(3px);
+}
+
+footer p,
+footer ul li {
+  color: var(--gray-light);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+footer .text-secondary {
+  color: var(--gray-dark) !important;
+}
+
+
+/*  karty z  planami*/
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-body .btn-zamow {
+  margin-top: auto;
+  align-self: flex-start; /* lub center jeśli chcesz wyśrodkować */
+}
+
+/* ============================================
+   FORMULARZE
+============================================ */
+.form-control {
+  border: 2px solid var(--gray-medium);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.form-control:focus {
+  border-color: var(--eiponi-red);
+  box-shadow: 0 0 0 0.2rem rgba(220, 20, 60, 0.15);
+  outline: none;
+}
+
+.form-label {
+  color: var(--text-primary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.form-check-input {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
+  opacity: 1 !important;
+  position: static !important;
+  pointer-events: auto !important;
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--eiponi-red);
+  cursor: pointer;
+}
+
+.form-check-label {
+  pointer-events: auto !important;
+  user-select: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+
+
+#success-message {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  background-color: var(--eiponi-red);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+#success-message.show {
+  opacity: 1;
+}
+
+/* Walidacja formularza */
+.was-validated .form-control:valid,
+.was-validated .form-check-input:valid,
+.form-control.is-valid {
+  border-color: var(--eiponi-red) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23DC143C' viewBox='0 0 16 16'%3e%3cpath d='M16 2 6 12.01 0 6.002l1.5-1.5L6 9.002 14.5.5 16 2z'/%3e%3c/svg%3e") !important;
+  box-shadow: none !important;
+}
+
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus {
+  border-color: var(--eiponi-red) !important;
+  box-shadow: none !important;
+}
+
+
+.was-validated .form-control:invalid,
+.was-validated .form-check-input:invalid {
+  border-color: var(--eiponi-red);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23DC143C' viewBox='0 0 16 16'%3e%3cpath d='M16 2 6 12.01 0 6.002l1.5-1.5L6 9.002 14.5.5 16 2z'/%3e%3c/svg%3e") !important;
+  color: var(--eiponi-red) !important;
+}
+
+.form-check-input.is-valid ~ .form-check-label,
+.was-validated .form-check-input:valid ~ .form-check-label {
+  color:var(--text-secondary) !important;
+}
+
+
+
+/* ============================================
+   KARTY (Globalne)
+============================================ */
+.card {
+  border: 1px solid var(--gray-medium);
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: var(--shadow-medium);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-medium);
+}
+
+.card-title {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  min-height: 3rem;
+  line-height: 1.5rem;
+}
+
+.card-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1rem;
+  text-align: left;
+  margin: 0.75rem auto 0;
+  
+}
+
+/* ============================================
+   PRZYCISKI
+============================================ */
+.btn-primary {
+  background-color: var(--eiponi-red);
+  border-color: var(--eiponi-red);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  background-color: var(--eiponi-red-dark);
+  border-color: var(--eiponi-red-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.btn-success {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+  border-color: #146c43;
+}
+
+/* ============================================
+   UTILITIES
+============================================ */
+.has-fixed-navbar { 
+  padding-top: 80px; 
+}
+
+.text-eiponi {
+  color: var(--eiponi-red) !important;
+}
+
+.text-navy {
+  color: var(--eiponi-navy) !important;
+}
+
+.bg-eiponi-pale {
+  background-color: var(--eiponi-red-pale) !important;
+}
+
+.bg-navy-pale {
+  background-color: var(--eiponi-navy-pale) !important;
+}
+
+.bg-cream {
+  background-color: var(--cream) !important;
+}
+
+.bg-paper {
+  background-color: var(--paper) !important;
+}
+
+/* Override Bootstrap classes */
+
+.bg-white {
+  background-color: var(--white) !important;
+}
+
+.bg-light {
+  background-color: var(--gray-light) !important;
+}
+
+.text-primary {
+  color: var(--text-secondary) !important;
+}
+
+/* ============================================
+   RESPONSYWNOŚĆ
+============================================ */
+@media (max-width: 992px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.35rem; }
+  
+  #landing h1 {
+    font-size: 2.25rem;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .testimonial-card {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  #landing h1 {
+    font-size: 1.75rem;
+  }
+  
+  .team-photo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .testimonial-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ============================================
+   ANIMACJE
+============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+@media (min-width: 1550px) {
+  #landing.hero {
+    background-size: 100% auto !important;
+    background-color: #FFF9F5;
+    background-attachment: scroll;
+  }
+}
+
+
+/* ============================================ 
+   POPRAWKI DLA AUTOFILL I WALIDACJI BOOTSTRAPA */
+/* Reset zielonego autofill Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px var(--white) inset !important;
+    box-shadow: 0 0 0 1000px var(--white) inset !important;
+
+    /* Twój kolor ramki */
+    border: 2px solid var(--eiponi-red) !important;
+
+    /* Kolor tekstu */
+    -webkit-text-fill-color: var(--text-primary) !important;
+
+    transition: background-color 5000s ease-in-out 0s;
+}

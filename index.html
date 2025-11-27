@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eiponi.com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="" class="">
+      <inner>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo1.png" alt="EIPONI" height="60" />
+            </a>
+
+            <!-- Hamburger ikona -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navMenu"
+              aria-controls="navMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-rekrutacja" href="grupowe.html"
+                    >Rekrutacja</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#landing">Strona główna</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#o-nas">O nas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#dla_kogo">Dla kogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#zespol">Zespół</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#opinie">Opinie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cennik">Cennik</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#landing">Zaloguj się</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </inner>
+    </section>
+    <section
+      id="landing"
+      class="hero d-flex align-items-center justify-content-center text-center text-white min-vh-100"
+    >
+      <inner>
+        <div class="container">
+          <h1 class="display-4 fw-bold text-shadow">
+            Nauka języka japońskiego<br />Dołącz do naszej społeczności
+          </h1>
+        </div>
+      </inner>
+    </section>
+
+    <section
+      id="o-nas"
+      class="py-5 bg-white d-flex align-items-center min-vh-100 tlo1"
+    >
+      <inner class="container">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Tekst -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h2 class="fw-bold mb-3">Nasza szkoła</h2>
+              <p class="lead">
+                EIPONI to miejsce, w którym nauka języka japońskiego staje się
+                przyjemnością. Dzięki naszym nauczycielom i nowoczesnym metodom,
+                uczniowie osiągają realne postępy.
+              </p>
+            </div>
+
+            <!-- Zdjęcie -->
+            <div class="col-md-6 text-center">
+              <img
+                src="img/ula.jpg"
+                class="img-fluid rounded shadow-lg"
+                alt="Książka pod drzewem sakury"
+              />
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section
+      id="dla_kogo"
+      class="py-5 min-vh-100 d-flex align-items-center justify-content-center bg-light"
+    >
+      <inner>
+        <div class="container">
+          <h2 class="text-center mb-5">Dla kogo są nasze zajęcia?</h2>
+          <div class="row g-4">
+            <!-- Karta 1 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 text-center">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="img/japonski_dla_kazdego.jpg"
+                    class="object-fit-cover"
+                    alt="Japoński dla każdego"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Japoński dla każdego</h5>
+                  <p class="card-text">
+                    Nie musisz znać ani jednego znaku — zaczynamy od podstaw!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Karta 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 text-center">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="img/grupy_wiekowe.jpg"
+                    class="object-fit-cover"
+                    alt="Dla każdej grupy wiekowej"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Dla każdej grupy wiekowej</h5>
+                  <p class="card-text">
+                    Dzieci, młodzież, dorośli — mamy odpowiednią grupę dla
+                    każdego.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Karta 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 text-center">
+                <div class="ratio ratio-4x3">
+                  <img
+                    src="img/indywidualne_grupowe.jpg"
+                    class="object-fit-cover"
+                    alt="Zajęcia indywidualne i grupowe"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Indywidualne i grupowe</h5>
+                  <p class="card-text">
+                    Dostosuj tryb nauki do siebie — zajęcia 1:1 lub w grupie.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section
+      id="zespol"
+      class="section-4 min-vh-100 bg-white d-flex align-items-center justify-content-center"
+    >
+      <inner>
+        <div class="container">
+          <h2 class="text-center">Nasz zespół</h2>
+          <div class="row g-4">
+            <!-- Osoba 1 -->
+            <div
+              class="col-sm-6 col-lg-4 col-xl-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card text-center h-100">
+                <img
+                  src="img/eriko.jpg"
+                  class="rounded-circle mx-auto mb-3 team-photo"
+                  alt="Anna Kowalska"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ula</h5>
+                  <p class="text-muted mb-1">(PL, JP, EN)</p>
+                  <p class="card-text small">
+                    Cześć! Jestem absolwentką ekonomii Uniwersytetu
+                    Warszawskiego i filologii orientalnej ze specjalizacją
+                    japonistyka Uniwersytetu Jagiellońskiego. Odbyłam roczne
+                    stypendium na Uniwersytecie Kobe. Od lat uczę w dowolnej
+                    kombinacji języków: japońskiego, angielskiego i polskiego.
+                    Lubię aikido i sushi. Mam nadzieję – do zobaczenia!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Osoba 2 -->
+            <div
+              class="col-sm-6 col-lg-4 col-xl-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="card text-center h-100">
+                <img
+                  src="img/yui.jpg"
+                  class="rounded-circle mx-auto mb-3 team-photo"
+                  alt="Takeshi Nakamura"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ryo</h5>
+                  <p class="text-muted mb-1">(JP, EN)</p>
+                  <p class="card-text small">
+                    Pochodzę z Miyazaki, od 2000 roku mieszkam w Polsce.
+                    Interesuję się językami i kulturami obcymi. Skończyłam
+                    studia w Stanach Zjednoczonych. Lubię gotować, uprawiać
+                    sport, DIY i podróżować. A co Ty lubisz? Porozmawiajmy!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Osoba 3 -->
+            <div
+              class="col-sm-6 col-lg-4 col-xl-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="card text-center h-100">
+                <img
+                  src="img/kenji.jpg"
+                  class="rounded-circle mx-auto mb-3 team-photo"
+                  alt="Eriko Tanaka"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Martyna</h5>
+                  <p class="text-muted mb-1">(PL, JP)</p>
+                  <p class="card-text small">
+                    Cześć! Z językiem japońskim mam styczność od 9 lat. W
+                    międzyczasie uczestniczyłam w wymianie ze szkołą
+                    Ritsumeikan, która znajduje się w Moriyamie, niedaleko
+                    Kioto. Lubię podróże, japońską popkulturę i dobre jedzenie.
+                    Do zobaczenia na zajęciach!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Osoba 4 -->
+            <div
+              class="col-sm-6 col-lg-4 col-xl-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="card text-center h-100">
+                <img
+                  src="img/mai.jpg"
+                  class="rounded-circle mx-auto mb-3 team-photo"
+                  alt="Jan Nowak"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Julia</h5>
+                  <p class="text-muted mb-1">(PL, JP, EN)</p>
+                  <p class="card-text small">
+                    Jestem absolwentką japonistyki na Uniwersytecie Warszawskim
+                    oraz po rocznej wymianie na Uniwersytecie Osaka. Posiadam
+                    certyfikat N1. Należę do Stowarzyszenia Drogi Herbaty
+                    Urasenke Sunshinkai, a w wolnych chwilach ćwiczę kaligrafię
+                    japońską. Bardzo mnie cieszy, że mogę pomagać w przygodzie z
+                    językiem japońskim i mam nadzieję, że będę mogła pomóc
+                    również Tobie :)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Osoba 5 -->
+            <div
+              class="col-sm-6 col-lg-4 col-xl-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="card text-center h-100">
+                <img
+                  src="img/takashi.jpg"
+                  class="rounded-circle mx-auto mb-3 team-photo"
+                  alt="Jan Nowak"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kasia</h5>
+                  <p class="text-muted mb-1">(PL, JP, EN)</p>
+                  <p class="card-text small">
+                    Ukończyłam studia doktoranckie z lingwistyki języka
+                    japońskiego na Uniwersytecie Osaka. Przez 10 lat mieszkałam
+                    w Japonii najpierw studiując tam, a później pracując w
+                    japońskiej agencji turystycznej w Tokio. W wolnych chwilach
+                    gram na koto lub shamisenie albo oglądam anime lub dramy
+                    japońskie. Mam nadzieję, że zarażę Was moją miłością do tego
+                    kraju! :)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section id="opinie" class="bg-light">
+      <inner>
+        <div class="container text-center py-5">
+          <h2 class="section-title mb-5">CO MÓWIĄ O NAS INNI</h2>
+
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <!-- Klasyczny Swiper -->
+              <div class="swiper opinieSwiper">
+                <div class="swiper-wrapper">
+                  <!-- SLIDE 1 -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Profesjonalizm, indywidualne podejście, tempo i zakres
+                        nauki dostosowane do poziomu i potrzeb ucznia, bardzo
+                        dobra atmosfera podczas zajęć. Polecam! :)
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Kai Shan</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 2 -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Duża różnorodność materiałów. Sposoby nauczania
+                        dopasowane do preferencji ucznia. Zajęcia są zrozumiałe
+                        i przyjemne. Już po pierwszej godzinie widać postępy.
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Katarzyna Fiałkowska</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 3 -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Indywidualne podejście do ucznia, elastyczne godziny
+                        lekcji, a także bardzo przyjętne ceny. Dodatkowym atutem
+                        jest przyjazna i miła atmosfera :D
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Aleksandra Lerchossek</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 4 (powtórka 1) -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Profesjonalizm, indywidualne podejście, tempo i zakres
+                        nauki dostosowane do poziomu i potrzeb ucznia, bardzo
+                        dobra atmosfera podczas zajęć. Polecam! :)
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Kai Shan</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 5 (powtórka 2) -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Duża różnorodność materiałów. Sposoby nauczania
+                        dopasowane do preferencji ucznia. Zajęcia są zrozumiałe
+                        i przyjemne. Już po pierwszej godzinie widać postępy.
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Katarzyna Fiałkowska</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 6 (powtórka 3) -->
+                  <div class="swiper-slide d-flex justify-content-center">
+                    <div class="testimonial-card">
+                      <img
+                        src="img/kenji.jpg"
+                        class="testimonial-avatar"
+                        alt="Avatar"
+                      />
+                      <p class="testimonial-quote">
+                        Indywidualne podejście do ucznia, elastyczne godziny
+                        lekcji, a także bardzo przyjętne ceny. Dodatkowym atutem
+                        jest przyjazna i miła atmosfera :D
+                      </p>
+                      <div class="testimonial-rating">★★★★★</div>
+                      <p class="testimonial-author">Aleksandra Lerchossek</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Paginacja -->
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- /Swiper -->
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section id="cennik" class="py-5 bg-white">
+      <inner>
+        <div class="container">
+          <h2 class="text-center mb-5">Plany nauczania i ceny</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm p-4 text-center">
+                <h3 class="mb-3">Zajęcia grupowe</h3>
+                <p>
+                  20 spotkań po 1,5h, nauka w kameralnej grupie, dostępne
+                  poziomy od N5 do N1.
+                </p>
+                <p class="fw-bold text-primary">Cena: od 1 000 zł</p>
+                <a href="grupowe.html" class="btn btn-outline-primary mt-auto"
+                  >Czytaj więcej</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm p-4 text-center">
+                <h3 class="mb-3">Zajęcia we dwoje</h3>
+                <p>
+                  Ucz się z drugą osobą — indywidualne podejście, wspólna
+                  motywacja, korzystna cena.
+                </p>
+                <p class="fw-bold text-primary">Cena: od 600 zł</p>
+                <a href="dwoje.html" class="btn btn-outline-primary mt-auto"
+                  >Czytaj więcej</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm p-4 text-center">
+                <h3 class="mb-3">Zajęcia indywidualne</h3>
+                <p>
+                  Pełna personalizacja nauki, elastyczne godziny, efektywny
+                  progres językowy.
+                </p>
+                <p class="fw-bold text-primary">Cena: od 350 zł</p>
+                <a
+                  href="indywidualne.html"
+                  class="btn btn-outline-primary mt-auto"
+                  >Czytaj więcej</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section id="" class="section-faq py-5 bg-light">
+      <inner>
+        <div class="container">
+          <h2 class="text-center mb-5">Najczęściej zadawane pytania</h2>
+          <div class="accordion" id="faqAccordion">
+            <!-- Pytanie 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse1"
+                  aria-expanded="false"
+                  aria-controls="collapse1"
+                >
+                  Ile jest osób na zajęciach?
+                </button>
+              </h2>
+              <div
+                id="collapse1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading1"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  W zależności od wybranego planu zajęcia mogą być indywidualne,
+                  w parze lub grupowe. Zajęcia indywidualne to 1 na 1 z
+                  nauczycielem. Zajęcia w parze to 2 osoby i 1 nauczyciel.
+                  Liczba osób na zajęciach grupowych zależy od wybranej grupy,
+                  ale maksymalnie wynosi 6.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pytanie 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse2"
+                  aria-expanded="false"
+                  aria-controls="collapse2"
+                >
+                  Jakich podręczników używacie?
+                </button>
+              </h2>
+              <div
+                id="collapse2"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading2"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Podręczniki wykorzystywane podczas zajęć są dopasowane do
+                  poziomu danego planu. Używamy serii Genki, New Approach i
+                  materiałów własnych. Uczestnik nie musi kupować podręcznika.
+                  Wszystko jest wyjaśniane w trakcie zajęć, wystarczy być na
+                  zajęciach.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pytanie 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse3"
+                  aria-expanded="false"
+                  aria-controls="collapse3"
+                >
+                  Kiedy jest początek zajęć?
+                </button>
+              </h2>
+              <div
+                id="collapse3"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading3"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Zajęcia indywidualne i w parze można rozpocząć w dowolnym
+                  momencie. Zajęcia grupowe odbywają się według kalendarza roku
+                  akademickiego. Do zajęć grupowych można dołączyć w trakcie
+                  semestru po wcześniejszej konsultacji.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pytanie 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  Jak mogę zapłacić za zajęcia?
+                </button>
+              </h2>
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading3"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Po złożeniu zamówienia wyświetla się okienko z fakturą
+                  proforma, w której są dane do przelewu, oraz opcją wybrania
+                  płatności poprzez PayPal lub płatności kartą. Zatem są trzy
+                  możliwości: przelew, PayPal, karta.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pytanie 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  Nie widzę planu zajęć
+                </button>
+              </h2>
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading3"
+                data-bs-parent="#faqAccordion"
+              >
+                <div class="accordion-body">
+                  Plan zajęć jest dostępny po zalogowaniu się.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section id="" class="newsletter-signup py-5 bg-white">
+      <inner>
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold text-uppercase ls-wide">
+            Newsletter
+          </h2>
+
+          <div class="row g-4">
+            <!-- Lewa kolumna - Formularz -->
+            <div class="col-lg-6">
+              <form class="newsletter-form" novalidate>
+                <!-- Pole e-mail -->
+                <div class="mb-3">
+                  <label for="newsletter-email" class="form-label"
+                    >Adres e-mail *</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="newsletter-email"
+                    name="email"
+                    placeholder="twoj@email.pl"
+                    required
+                  />
+                  <div class="form-text">
+                    Nigdy nie udostępnimy Twojego adresu osobom trzecim.
+                  </div>
+                </div>
+
+                <!-- Honeypot (ukryte pole dla botów - NIE USUWAJ!) -->
+                <input
+                  type="text"
+                  name="website"
+                  class="visually-hidden"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+
+                <!-- Checkbox zgody -->
+                <div class="mb-4">
+                  <div class="form-check position-relative">
+                    <label
+                      class="form-check-label d-flex align-items-center"
+                      style="cursor: pointer; pointer-events: auto"
+                    >
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        id="newsletter-consent"
+                        name="consent"
+                        required
+                        style="pointer-events: auto"
+                      />
+                      Wyrażam zgodę na otrzymywanie newslettera
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Przycisk -->
+                <div class="d-grid">
+                  <button class="btn btn-success btn-lg" type="submit">
+                    Zapisz się teraz
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Prawa kolumna - Tekst informacyjny -->
+            <div class="col-lg-6">
+              <div class="ps-lg-4">
+                <p class="mb-3">
+                  <strong>Już wkrótce premiera naszego newslettera!</strong>
+                  Zapisz się i bądź pierwszym, który się dowie!<br />
+                  <span class="text-danger fw-bold">Nie przegap okazji!</span>
+                </p>
+
+                <p class="mb-4 text-muted">
+                  Pracujemy nad czymś wyjątkowym! Dołącz do naszego newslettera,
+                  aby jako pierwszy otrzymać ekskluzywne informacje, wyjątkowe
+                  materiały i unikalne treści, które przygotowujemy.
+                </p>
+
+                <!-- Lista korzyści -->
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-start mb-3">
+                    <span class="text-success me-2 fs-5">✓</span>
+                    <span>Unikalne materiały i porady</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-3">
+                    <span class="text-success me-2 fs-5">✓</span>
+                    <span>Nowości i wydarzenia</span>
+                  </li>
+                  <li class="d-flex align-items-start mb-3">
+                    <span class="text-success me-2 fs-5">✓</span>
+                    <span>Zero spamu – tylko wartościowe wiadomości</span>
+                  </li>
+                </ul>
+
+                <p class="mt-4">
+                  <strong>Nie przegap premiery!</strong> Zostaw swój e-mail i
+                  bądź na bieżąco.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </inner>
+    </section>
+
+    <section id="footer" class="">
+      <inner>
+        <footer class="bg-dark text-light py-4">
+          <div class="container">
+            <div class="row">
+              <!-- Kolumna 1 -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase mb-3">Załączniki</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-light text-decoration-none"
+                      >Polityka prywatności</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none"
+                      >Polityka cookies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none"
+                      >Regulamin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="text-light text-decoration-none">RODO</a>
+                  </li>
+                  <li>
+                    <a
+                      href="footer_kontakt.html"
+                      class="text-light text-decoration-none"
+                      >Współpraca</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Kolumna 2 -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase mb-3">Godziny otwarcia</h5>
+                <ul class="list-unstyled">
+                  <li>8:00–21:00 Poniedziałek</li>
+                  <li>8:00–21:00 Wtorek</li>
+                  <li>8:00–21:00 Środa</li>
+                  <li>8:00–21:00 Czwartek</li>
+                  <li>8:00–21:00 Piątek</li>
+                  <li>9:00–14:00 Sobota</li>
+                </ul>
+              </div>
+              <!-- Kolumna 3 -->
+              <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase mb-3">Kontakt</h5>
+                <p class="mb-1"><strong>Eiponi Language School ZCP</strong></p>
+                <p class="mb-1">
+                  Fundacja Rozwoju Przedsiębiorczości „Twój StartUp”
+                </p>
+                <p class="mb-1">
+                  Adres: ul. Żurawia 6/12, lok. 766<br />00-503 Warszawa, Polska
+                </p>
+                <p class="mb-1">
+                  NIP: 5213641211<br />REGON: 146433467<br />KRS: 0000442857
+                </p>
+                <p class="mb-0">Kontakt: przez formularz</p>
+              </div>
+            </div>
+            <hr class="border-secondary mt-4" />
+            <div class="text-center small text-secondary">
+              © 2025 Eiponi Language School ZCP
+            </div>
+          </div>
+        </footer>
+      </inner>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
