@@ -81,10 +81,23 @@
         </nav>
       </inner>
     </section>
+ 
     <section
       id="landing"
-      class="hero d-flex align-items-center justify-content-center text-center text-white min-vh-100"
+      class="hero d-flex align-items-center justify-content-center text-center text-white"
     >
+      <!-- TŁO: <picture> + <img> -->
+      <picture class="hero-bg">
+        <!-- wersja mobilna -->
+        <source media="(max-width: 768px)" srcset="img/sakura_sekcja1_mobile.png"/>
+        <!-- wersja domyślna -->
+        <img
+          src="img/sakura_sekcja1.png"
+          alt="Sakura background"
+          class="hero-img"
+        />
+      </picture>
+
       <inner>
         <div class="container">
           <h1 class="display-4 fw-bold text-shadow">
