@@ -199,6 +199,7 @@ p {
 #landing h1 {
   color: var(--white);
   font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
@@ -1037,9 +1038,6 @@ footer .text-secondary {
     font-size: 1.35rem;
   }
 
-  #landing h1 {
-    font-size: 2.25rem;
-  }
 
   body {
     font-size: 15px;
@@ -1055,9 +1053,6 @@ footer .text-secondary {
 }
 
 @media (max-width: 576px) {
-  #landing h1 {
-    font-size: 1.75rem;
-  }
 
   .team-photo {
     width: 100px;
