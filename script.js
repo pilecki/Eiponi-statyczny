@@ -130,4 +130,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // ============================================
+  // Zamykanie hamburgera po kliknieciu w link
+  // ============================================
+  const navMenu = document.getElementById('navMenu');
+  if (navMenu && typeof bootstrap !== 'undefined') {
+    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navMenu, { toggle: false });
+    const navLinks = navMenu.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Dziala tylko, gdy menu jest rozwiniete (mobilnie)
+        if (window.innerWidth < 992) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  }
+
+
 });

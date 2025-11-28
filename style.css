@@ -242,6 +242,12 @@ p {
   transform: scale(1.02);
 }
 
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+
+
 /* ============================================
    SEKCJA: DLA KOGO (#dla_kogo)
 ============================================ */
@@ -998,6 +1004,12 @@ footer .text-secondary {
 .text-primary {
   color: var(--text-secondary) !important;
 }
+
+
+.scroll-margin {
+  scroll-margin-top: 60px !important; /* Dostosuj wartość w zależności od wysokości navbaru */
+}
+
 
 /* ============================================
    RESPONSYWNOŚĆ
