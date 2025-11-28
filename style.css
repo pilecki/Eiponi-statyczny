@@ -385,13 +385,18 @@ p {
 /* ============================================
    SEKCJA: OPINIE (#opinie)
 ============================================ */
+
 #opinie {
   padding: 5rem 0;
 }
 
+/* Wygaszanie tła bootstrapowego dla spójności */
+
 #opinie .bg-light {
   background-color: transparent !important;
 }
+
+/* Nagłówek sekcji */
 
 #opinie h2 {
   color: var(--text-secondary);
@@ -400,23 +405,22 @@ p {
   margin-bottom: 3rem;
 }
 
-.section-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 40px;
-}
+/* Swiper – kontener z opiniami */
 
 .opinieSwiper {
   width: 100%;
   padding: 20px 10px 60px 10px;
 }
 
+/* Pojedynczy slajd Swipera */
+
 .swiper-slide {
   height: auto;
   display: flex;
   align-items: stretch;
 }
+
+/* Karta opinii */
 
 .testimonial-card {
   background: var(--white);
@@ -439,6 +443,8 @@ p {
   border-color: var(--eiponi-red-light);
 }
 
+/* Avatar */
+
 .testimonial-avatar {
   width: 80px;
   height: 80px;
@@ -450,6 +456,8 @@ p {
   padding: 3px;
 }
 
+/* Cytat (główna treść opinii) */
+
 .testimonial-quote {
   font-size: 15px;
   line-height: 1.6;
@@ -460,6 +468,8 @@ p {
   font-style: italic;
 }
 
+/* Gwiazdki */
+
 .testimonial-rating {
   color: var(--accent-gold);
   font-size: 20px;
@@ -467,6 +477,8 @@ p {
   flex-shrink: 0;
   letter-spacing: 2px;
 }
+
+/* Autor opinii */
 
 .testimonial-author {
   font-weight: 600;
@@ -476,6 +488,8 @@ p {
   flex-shrink: 0;
 }
 
+/* Nawigacja Swipera */
+
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -484,6 +498,8 @@ p {
   transition: all 0.3s ease;
 }
 
+/* Aktywny bullet */
+
 .swiper-pagination-bullet-active {
   background: var(--eiponi-red);
   opacity: 1;
@@ -491,9 +507,11 @@ p {
   border-radius: 6px;
 }
 
+
 /* ============================================
    SEKCJA: CENNIK (#cennik)
 ============================================ */
+
 #cennik {
   background-color: var(--white);
   padding: 5rem 0;
