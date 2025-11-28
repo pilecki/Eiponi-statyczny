@@ -517,6 +517,8 @@ p {
   padding: 5rem 0;
 }
 
+/* Nagłówek sekcji */
+
 #cennik h2 {
   color: var(--eiponi-red);
   font-size: 2.25rem;
@@ -524,90 +526,9 @@ p {
   margin-bottom: 3rem;
 }
 
-.plan-card {
-  border: 2px solid var(--gray-medium);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--white);
-  box-shadow: var(--shadow-soft);
-  transition: all 0.3s ease;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.plan-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-medium);
-  border-color: var(--eiponi-red);
-}
-
-.plan-card h3 {
-  color: var(--eiponi-red);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.plan-card .price {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin: 1.5rem 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.plan-card .price span {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--text-muted);
-}
-
-.plan-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0;
-  flex-grow: 1;
-}
-
-.plan-card ul li {
-  padding: 0.75rem 0;
-  color: var(--text-secondary);
-  border-bottom: 1px solid var(--gray-light);
-}
-
-.plan-card ul li:last-child {
-  border-bottom: none;
-}
-
-.plan-card .btn {
-  margin-top: auto;
-}
-
-.plan-featured {
-  border-color: var(--eiponi-red);
-  position: relative;
-  transform: scale(1.05);
-  z-index: 1;
-}
-
-.plan-featured::before {
-  content: "NAJPOPULARNIEJSZY";
-  position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--eiponi-red);
-  color: var(--white);
-  padding: 0.5rem 1.5rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
 
 /* Badge z ceną na kartach */
+
 .badge-cena {
   position: absolute;
   top: 15px;
@@ -618,29 +539,11 @@ p {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 700;
-  box-shadow: var(--shadow-soft);
 }
 
-/* Przycisk "Zamów" na kartach */
-.btn-zamow {
-  background-color: transparent;
-  border: 2px solid var(--eiponi-red);
-  color: var(--eiponi-red);
-  font-weight: 600;
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
 
-.btn-zamow:hover {
-  background-color: var(--eiponi-red);
-  border-color: var(--eiponi-red);
-  color: var(--white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
-}
-
-/* Stylizacja przycisku outline-primary */
+/* Stylizacja przycisku outline-primary
+   w sekcji cennik, zajęcia: grupowe, we dwoje, indywidualne */
 
 .btn-outline-primary,
 .btn-outline-primary:focus,
@@ -684,12 +587,14 @@ p {
 }
 
 /* Trójkąt w lewym górnym rogu  grupa Yokohama*/
+
 .badge-trojkat {
   position: absolute;
   top: 0;
   left: 0;
 
   /* wielkość trójkąta */
+
   width: 0;
   height: 0;
   border-top: 90px solid var(--eiponi-red);
@@ -699,6 +604,7 @@ p {
 }
 
 /* Tekst na trójkącie */
+
 .badge-trojkat-tekst {
   position: absolute;
   top: 15px;
@@ -712,6 +618,7 @@ p {
   z-index: 21;
   pointer-events: none;
 }
+
 
 /* ============================================
    SEKCJA: FAQ
