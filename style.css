@@ -624,29 +624,36 @@ p {
    SEKCJA: FAQ
 ============================================ */
 
-/* Zmiana koloru nagłówka po otwarciu */
+/* Otwarty element akordeonu */
 .accordion-button:not(.collapsed) {
   background-color: var(--gray-light) !important;
   color: var(--text-secondary) !important;
   box-shadow: none !important;
 }
 
+/* Zamknięty element akordeonu */
+
 .accordion-button.collapsed {
   background-color: var(--white);
   color: var(--text-secondary);
 }
+
+/* Tło i kolor treści po otwarciu */
+
 .accordion-collapse.show .accordion-body {
   background-color: var(--white);
   color: var(--text-primary);
 }
 
+/* Focus (kliknięcie) */
+
 .accordion-button:focus {
   border-color: var(--text-secondary) !important;
-  box-shadow: 0 0 0 0.15rem rgba(72, 74, 72, 0.25) !important;
-  box-shadow: 0 0 0 0.15rem rgba(220, 20, 60, 0.25) !important;
-  box-shadow: none !important;
+  box-shadow: none !important; 
   border-left: solid 3px var(--eiponi-red) !important;
 }
+
+
 
 /* ============================================
    SEKCJA: NEWSLETTER/KONTAKT
