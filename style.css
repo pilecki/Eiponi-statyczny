@@ -246,16 +246,10 @@ p {
 /* Nagłówek hero */
 #landing h1 {
   color: var(--white);
-  font-size: 3.5rem;
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 1.5rem;
-}
-
-/* Cień tekstu */
-.text-shadow {
-  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -1054,6 +1048,10 @@ footer .text-secondary {
   color: var(--text-secondary) !important;
 }
 
+/* Cień tekstu */
+.text-shadow {
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
+}
 
 .scroll-margin {
   scroll-margin-top: 60px !important; /* Dostosuj wartość w zależności od wysokości navbaru */
