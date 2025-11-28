@@ -297,9 +297,12 @@ p {
 /* ============================================
    SEKCJA: DLA KOGO (#dla_kogo)
 ============================================ */
+
 #dla_kogo {
   padding: 5rem 0;
 }
+
+/* Nagłówek sekcji */
 
 #dla_kogo h2 {
   color: var(--text-secondary);
@@ -308,13 +311,19 @@ p {
   margin-bottom: 3rem;
 }
 
+/* Karta */
+
 #dla_kogo .card {
-  overflow: hidden;
+  overflow: hidden; /* Ukrywa nadmiar obrazu przy powiększeniu */
 }
+
+/* Tytuł karty */
 
 #dla_kogo .card-title {
   margin-top: 1rem;
 }
+
+/* Obrazek w karcie – animacja */
 
 #dla_kogo .ratio img {
   transition: transform 0.3s ease;
@@ -323,6 +332,8 @@ p {
 #dla_kogo .card:hover .ratio img {
   transform: scale(1.05);
 }
+
+
 
 /* ============================================
    SEKCJA: ZESPÓŁ (#zespol)
