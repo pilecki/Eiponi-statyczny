@@ -257,10 +257,13 @@ p {
 /* ============================================
    SEKCJA: O NAS (#o-nas)
 ============================================ */
+
 #o-nas {
   background-color: var(--white);
   padding: 5rem 0;
 }
+
+/* Nagłówek sekcji */
 
 #o-nas h2 {
   color: var(--eiponi-red);
@@ -269,11 +272,15 @@ p {
   font-weight: 700;
 }
 
+/* Tekst wprowadzający */
+
 #o-nas .lead {
   color: var(--text-secondary);
   font-size: 1.2rem;
   line-height: 1.8;
 }
+
+/* Zdjęcie w sekcji */
 
 #o-nas img {
   border-radius: 15px;
@@ -283,10 +290,6 @@ p {
 
 #o-nas img:hover {
   transform: scale(1.02);
-}
-
-.min-vh-75 {
-  min-height: 75vh !important;
 }
 
 
@@ -1010,6 +1013,15 @@ footer .text-secondary {
   padding-top: 80px;
 }
 
+.scroll-margin {
+  scroll-margin-top: 60px !important; /* Dostosuj wartość w zależności od wysokości navbaru */
+}
+
+.min-vh-75 {
+  min-height: 75vh !important;
+}
+
+
 .text-eiponi {
   color: var(--eiponi-red) !important;
 }
@@ -1053,9 +1065,7 @@ footer .text-secondary {
   text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.6);
 }
 
-.scroll-margin {
-  scroll-margin-top: 60px !important; /* Dostosuj wartość w zależności od wysokości navbaru */
-}
+
 
 
 /* ============================================
