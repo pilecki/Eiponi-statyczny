@@ -13,28 +13,15 @@
   /* Kolory główne (czerwienie) */
   --eiponi-red: #dc143c; /* Czerwony z flagi Polski i Japonii */
   --eiponi-red-light: #ff6b6b; /* Jasny czerwony */
-  --eiponi-red-pale: #ffe5e5; /* Bardzo jasny czerwony */
-  --eiponi-red-dark: #b01030; /* Ciemny czerwony */
   --eiponi-red-dark-logo: #c30f1b; /* czerwony z loga */
   --eiponi-red-light-logo: #e91120; /* jasny czerwony z loga */
-
-  /* Kolory główne (granaty) */
-
-  --eiponi-navy: #00247d; /* Granatowy z flagi brytyjskiej */
-  --eiponi-navy-light: #1e3a8a; /* Jasny granatowy */
-  --eiponi-navy-pale: #e0e7ff; /* Bardzo jasny granatowy */
-  --eiponi-navy-logo: #434b92; /* Granatowy z flagi brytyjskiej z loga */
-  --eiponi-navy-light-logo: #545eb8; /* Jasny granatowy z loga */
-
+  
   /* Neutralne / tła */
 
   --white: #ffffff;
-  --cream: #fff9f5;
-  --paper: #f8f6f4;
   --gray-light: #f5f5f5;
   --gray-medium: #e0e0e0;
   --gray-dark: #6c757d;
-  --gray-logo: #dedede; /* szary z loga */
 
   /* Kolory tekstu */
 
@@ -45,20 +32,12 @@
   /* Akcenty */
 
   --accent-gold: #d4af37;
-  --accent-green: #198754;
-  --accent-blue: #0d6efd;
 
   /* Cienie */
 
   --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --shadow-strong: 0 8px 25px rgba(0, 0, 0, 0.12);
   --shadow-eiponi: 0 0 15px rgba(220, 20, 60, 0.25);
-
-  /* Tła globalne */
-
-  --color-bg: #fff6f0; /* Warm cream background */
-  --color-bg-alt: #fff9f6; /* Subtle warm tint */
 }
 
 /* RESET I PODSTAWY TYPOGRAFII */
@@ -192,7 +171,7 @@ p {
 /* Hover o focus "Rekrutacja" */
 .nav-rekrutacja:hover,
 .nav-rekrutacja:focus {
-  background-color: var(--eiponi-red-dark);
+  background-color: var(--eiponi-red-dark-logo);
   color: var(--white) !important;
   transform: translateY(-2px);
 }
@@ -484,7 +463,6 @@ p {
   font-weight: 600;
   color: var(--text-secondary);
   margin: 0;
-  font-size: 16px;
   flex-shrink: 0;
 }
 
@@ -565,8 +543,8 @@ p {
 
 /* Active (kliknięcie) – zachowaj czerwony */
 .btn-outline-primary:active {
-  background-color: var(--eiponi-red-dark) !important;
-  border-color: var(--eiponi-red-dark) !important;
+  background-color: var(--eiponi-red-dark-logo) !important;
+  border-color: var(--eiponi-red-dark-logo) !important;
   color: var(--white) !important;
 }
 
@@ -716,18 +694,6 @@ footer ul li {
 }
 
 
-/*  karty z  planami*/
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.card-body .btn-zamow {
-  margin-top: auto;
-  align-self: flex-start; /* lub center jeśli chcesz wyśrodkować */
-}
 
 /* ============================================
    FORMULARZE
@@ -867,8 +833,8 @@ footer ul li {
 }
 
 .btn-primary:hover {
-  background-color: var(--eiponi-red-dark);
-  border-color: var(--eiponi-red-dark);
+  background-color: var(--eiponi-red-dark-logo);
+  border-color: var(--eiponi-red-dark-logo);
   transform: translateY(-2px);
   box-shadow: var(--shadow-medium);
 }
@@ -884,8 +850,8 @@ footer ul li {
 
 
  .btn-success:hover {
-  background-color: var(--eiponi-red-dark);
-  border-color: var(--eiponi-red-dark);
+  background-color: var(--eiponi-red-dark-logo);
+  border-color: var(--eiponi-red-dark-logo);
   transform: translateY(-2px);
   box-shadow: var(--shadow-medium);
 }
@@ -912,10 +878,6 @@ footer ul li {
   color: var(--eiponi-red) !important;
 }
 
-.text-navy {
-  color: var(--eiponi-navy) !important;
-}
-
 .text-gray-dark {
   color: var(--text-secondary) !important;
 }
@@ -934,21 +896,6 @@ footer ul li {
   background-color: var(--text-primary) !important;
 }
 
-.bg-eiponi-pale {
-  background-color: var(--eiponi-red-pale) !important;
-}
-
-.bg-navy-pale {
-  background-color: var(--eiponi-navy-pale) !important;
-}
-
-.bg-cream {
-  background-color: var(--cream) !important;
-}
-
-.bg-paper {
-  background-color: var(--paper) !important;
-}
 
 /* Override Bootstrap classes */
 
