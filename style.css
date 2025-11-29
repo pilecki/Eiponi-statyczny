@@ -675,23 +675,24 @@ p {
 /* ============================================
    FOOTER (#footer)
 ============================================ */
-#footer footer,
+
+/* Główny kontener stopki */
+
 footer {
-  background-color: var(--text-primary);
-  color: var(--white);
   border-top: 3px solid var(--eiponi-red);
-  padding: 3rem 0 1.5rem;
+  color: var(--gray-light)
 }
 
+/* Nagłówki kolumn */
+
 footer h5 {
-  color: var(--white);
-  font-weight: 600;
-  font-size: 1.1rem;
+  color: var(--gray-light);
   border-bottom: 2px solid var(--eiponi-red);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
   display: inline-block;
-  margin-bottom: 1rem;
 }
+
+/* Linki */
 
 footer a {
   color: var(--gray-light);
@@ -701,9 +702,11 @@ footer a {
 }
 
 footer a:hover {
-  color: var(--eiponi-red-light);
+  color: var(--eiponi-red);
   transform: translateX(3px);
 }
+
+/* Teksty w kolumnach */
 
 footer p,
 footer ul li {
@@ -712,9 +715,6 @@ footer ul li {
   line-height: 1.8;
 }
 
-footer .text-secondary {
-  color: var(--gray-dark) !important;
-}
 
 /*  karty z  planami*/
 
@@ -918,6 +918,20 @@ footer .text-secondary {
 
 .text-gray-dark {
   color: var(--text-secondary) !important;
+}
+.text-gray-light {
+  color: var(--gray-light) !important;
+}
+
+.text-gray-muted {
+  color: var(--text-muted) !important;
+}
+
+
+/* Tła */
+
+.bg-eiponi-primary {
+  background-color: var(--text-primary) !important;
 }
 
 .bg-eiponi-pale {
